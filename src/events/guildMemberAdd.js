@@ -24,8 +24,8 @@ const getWelcomeMessage = (userId) => {
     Play around with the code here and customise the welcome message.
   */
   return {
-    content: `Welcome ${userMention(userId)},
-    Hope you have great time here!
+    content: `Welcome ${userMention(userId)}!
+    Glad you could make it!
   `,
   };
 };
@@ -41,8 +41,8 @@ const getWelcomeMessageWithMeme = async (userId) => {
   const meme = await getMeme();
 
   return {
-    content: `Welcome ${userMention(userId)},
-    Here's a meme for you to enjoy!`,
+    content: `Welcome ${userMention(userId)}!
+    Come in and make yourself at home`,
     embeds: [meme],
   };
 };
